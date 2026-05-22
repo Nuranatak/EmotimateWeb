@@ -1,0 +1,11 @@
+# EMOTIMATE — basic Apache hardening (optional; safe on XAMPP)
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+# Deny access to hidden files (.git, .env, etc.)
+<FilesMatch "^\.">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+</FilesMatch>

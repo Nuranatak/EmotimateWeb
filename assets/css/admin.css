@@ -1,0 +1,75 @@
+body.admin-body {
+    background: var(--em-green-light, #e8f5ef);
+}
+
+.admin-hero {
+    background: linear-gradient(135deg, var(--em-green-dark, #4a8f6f) 0%, var(--em-green-darker, #3d7359) 100%);
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.admin-sidebar {
+    border-radius: 1rem;
+    background: #fff;
+}
+
+.admin-nav-link {
+    color: var(--em-text, #2f3e36);
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.admin-nav-link:hover,
+.admin-nav-link.active {
+    background: var(--em-green-dark, #4a8f6f);
+    color: #fff;
+}
+
+.admin-card {
+    border: 0;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: var(--em-shadow, 0 0.25rem 1.25rem rgba(47, 62, 54, 0.08));
+}
+
+.admin-card.card-hover:hover,
+.stat-card.card-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--em-shadow-hover, 0 0.75rem 2rem rgba(61, 115, 89, 0.14));
+}
+
+.table-tests td {
+    vertical-align: middle;
+}
+
+.description-preview {
+    max-width: 320px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 991.98px) {
+    .description-preview {
+        max-width: 180px;
+    }
+}
+
+/* Admin sidebar: visible on desktop, collapsible on mobile */
+@media (min-width: 992px) {
+    .admin-sidebar-collapse {
+        display: block !important;
+        height: auto !important;
+        visibility: visible !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .admin-sidebar-collapse:not(.show) {
+        display: none;
+    }
+
+    .admin-sidebar-collapse.collapsing {
+        transition: height 0.3s ease;
+    }
+}

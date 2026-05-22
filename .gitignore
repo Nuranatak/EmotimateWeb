@@ -1,0 +1,72 @@
+# Local configuration overrides (copy from *.example.php templates)
+config/database.local.php
+config/app.local.php
+
+# One-time setup lock files
+setup/.admin_seeded.lock
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# PHP / Composer
+/vendor/
+composer.phar
+
+# Node (if added later)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Logs and cache
+*.log
+logs/
+cache/
+tmp/
+temp/
+.phpunit.cache/
+.phpunit.result.cache
+
+# XAMPP / local server (if copied into project by mistake)
+xampp/
+mysql/data/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE / editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+*~
+
+# Archives and backups
+*.bak
+*.backup
+*.old
+*.orig
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# User-uploaded screenshots (optional — remove this line if you commit images)
+# assets/screenshots/*.png
+# assets/screenshots/*.jpg
+# assets/screenshots/*.webp

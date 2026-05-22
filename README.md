@@ -202,10 +202,9 @@ Example usage:
 
 ## Author
 
-**[Your Full Name]**  
-Web Programming Final Project  
-**Student ID:** [Your Student ID]  
-**Institution:** [Your University]  
+**Nuran Atak**  
+Web Programming Final Project   
+**Institution:** [Universiteti Politeknik i Tiranës]  
 **Year:** 2026
 
 ---
